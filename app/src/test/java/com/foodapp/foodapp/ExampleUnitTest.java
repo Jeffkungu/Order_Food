@@ -1,4 +1,4 @@
-package com.example.jeffkungu.foodapp;
+package com.foodapp.foodapp;
 
 import org.junit.Test;
 

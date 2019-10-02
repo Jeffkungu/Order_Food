@@ -1,4 +1,4 @@
-package com.example.jeffkungu.foodapp;
+package com.foodapp.foodapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
