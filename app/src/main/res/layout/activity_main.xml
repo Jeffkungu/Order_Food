@@ -4,15 +4,132 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.foodapp.foodapp.MainActivity">
+    tools:context="com.foodapp.foodapp.MainActivity"
+    android:background="@drawable/dine_image">
 
-    <TextView
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalGuide2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/horizontalGuide2"
+        app:layout_constraintStart_toEndOf="@id/verticalGuide1"
+        app:layout_constraintEnd_toStartOf="@id/verticalGuide2"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalGuide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalGuide6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:gravity="center"
+        android:text="Some minds are like soup in a poor restaurant better left unstirred."
+        android:textColor="@color/colorWHite"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontalGuide6"
+        app:layout_constraintEnd_toStartOf="@id/verticalGuide2"
+        app:layout_constraintStart_toEndOf="@id/verticalGuide1"
+        app:layout_constraintTop_toBottomOf="@id/horizontalGuide5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalGuide6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalGuide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalGuide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        android:textColor="@color/colorWHite"
+        android:background="@drawable/button_green"
+        app:layout_constraintStart_toEndOf="@id/verticalGuide3"
+        app:layout_constraintTop_toBottomOf="@id/horizontalGuide3"
+        app:layout_constraintEnd_toStartOf="@id/verticalGuide4"
+        app:layout_constraintBottom_toTopOf="@id/horizontalGuide4"/>
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/button_white"
+        app:layout_constraintStart_toEndOf="@id/verticalGuide5"
+        app:layout_constraintTop_toBottomOf="@id/horizontalGuide3"
+        app:layout_constraintEnd_toStartOf="@id/verticalGuide6"
+        app:layout_constraintBottom_toTopOf="@id/horizontalGuide4"/>
+
 
 </android.support.constraint.ConstraintLayout>
